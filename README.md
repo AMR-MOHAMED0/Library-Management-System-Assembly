@@ -49,9 +49,9 @@ This repository contains a fully functional **Library Management System** writte
 ## Author
 
 **Amr Mohamed Mahmoud** |
+Faculty of Computers & Information Sciences (FCIS),
+Computer Science Department — Year 3,
 Mansoura University
-Faculty of Computers & Information Sciences (FCIS)  
-Computer Science Department — Year 3
 
 ---
 
