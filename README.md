@@ -1,43 +1,60 @@
 # Library Management System (x86 Assembly)
 
+![System Demo Screenshot](IMG.png)
+
 ## Project Overview
 
-This repository hosts a robust and fully functional **Library Management System** implemented entirely in **x86 Assembly Language**. Developed as a final project for the Computer Science curriculum at Mansoura University, this system demonstrates a deep understanding of low-level programming, memory management, and direct hardware interaction via interrupts.
+This repository contains a fully functional **Library Management System** written in x86 Assembly Language, created as a Year 3 student project for the Computer Science Department, Faculty of Computers & Information Sciences (FCIS), Mansoura University. The system demonstrates mastery of low-level programming, parallel array management, interrupt-driven operations, and robust input validation.
 
-The application provides core functionalities for managing a library's inventory, including adding, viewing, searching, and deleting book records.
+### Technical Highlights
 
-## Technical Depth and Implementation Highlights
+- **Parallel Arrays:** Efficient structuring and manipulation of book records (ID, Title, Status).
+- **DOS & BIOS Interrupts:** Uses `INT 21h` and `INT 10h` for screen handling and keyboard I/O.
+- **Input Validation:** Strict checking of numeric and empty input with clear user error messages.
+- **Modular Procedures:** Each core function (add, delete, borrow, return) is separated for clarity and maintainability.
 
-The project was engineered to showcase advanced assembly programming techniques, including:
+---
 
-- **Parallel Arrays for Data Structuring:** Book records are managed efficiently using multiple parallel arrays. This technique allows for fast lookups and manipulation of related data fields (e.g., Book Title, Author, ISBN, Quantity) while maintaining the low-level control inherent to assembly.
-- **BIOS and DOS Interrupts:** Extensive use of **INT 21h** (DOS services) and **INT 10h** (Video services) for screen manipulation, keyboard input, and file I/O operations, ensuring direct and efficient interaction with the operating system environment.
-- **Input Validation and Error Handling:** Robust routines are implemented to validate user input (e.g., ensuring numeric fields contain only digits, checking string lengths) to prevent system crashes and maintain data integrity.
-- **Modular Design:** The codebase is structured into clearly defined procedures and subroutines, promoting readability and maintainability—a critical practice even in assembly language programming.
+## Main Features
 
-## How to Run the Project
+| Feature           | Description                                          |
+| ----------------- | ---------------------------------------------------- |
+| Add New Book      | Input new books with robust validation               |
+| Show All Books    | Display all books with their status and titles       |
+| Borrow Book       | Mark book status as "Borrowed"                       |
+| Return Book       | Mark book status as "Available"                      |
+| Delete Book       | Remove a book and shift arrays accordingly           |
+| Robust Validation | Reject empty/non-numeric input, clear error messages |
 
-This project is designed to be compiled and executed within the **EMU8086** emulator environment.
+---
 
-1.  **Prerequisites:** Ensure you have the EMU8086 emulator installed on your system.
-2.  **Open Source File:** Open the main source file, `Assembly Final Project.asm`, directly within the EMU8086 application.
-3.  **Compile and Run:** Use the built-in "Compile" and "Run" functionalities within EMU8086. The program will execute in a simulated DOS environment.
+## How to Run
+
+1. **Install EMU8086:**  
+   Download and install [EMU8086 Emulator](https://emu8086.com/download/).
+2. **Open the Source:**  
+   Open `Assembly Final Project.asm` in the EMU8086 IDE.
+3. **Compile & Run:**  
+   Use "Compile" then "Run" from within EMU8086.
+
+---
 
 ## Video Demonstration
 
-A full video demonstration of the system's functionality is available. This video walks through the user interface, data entry, search features, and error handling.
-
-[**Link to Video Demonstration**](https://drive.google.com/file/d/1s0bD_sVqI5_6bKXNBRMei2ybQQ0JABGS/view?usp=drive_link)
+- ▶️ [Watch Video Demonstration](https://drive.google.com/file/d/1s0bD_sVqI5_6bKXNBRMei2ybQQ0JABGS/view?usp=drive_link)
+- 📁 [All Project Files & Video Folder](https://drive.google.com/drive/folders/1qMDlRYkO0ixkturzf-oogqQ2IRd4Q2-u?usp=drive_link)
 
 ---
 
 ## Author
 
-**Amr Mohamed Mahmoud**
+**Amr Mohamed Mahmoud** |
+Mansoura University
+Faculty of Computers & Information Sciences (FCIS)  
+Computer Science Department — Year 3
 
-- FCIS, Computer Science Student, Year 3
-- Mansoura University
+---
 
 ## License
 
-This project is open-source and available under the MIT License. (Consider adding a LICENSE file for completeness.)
+Released under the MIT License.
